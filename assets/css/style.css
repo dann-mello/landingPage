@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 header {
@@ -17,13 +18,15 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 1100px;
+    flex-wrap: wrap;
 }
 
 .logo a {
     font-weight: bold;
     color: #fff;
-    font-size: 2em;
+    font-size: 2rem;
     text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -33,6 +36,7 @@ header {
     width: 200px;
     justify-content: end;
     position: relative;
+    font-family: Arial, sans-serif;
 }
 
 nav {
@@ -42,7 +46,7 @@ nav {
     display: none;
 }
 
-nav ul{
+nav ul {
     padding: 0;
     cursor: pointer;
 }
@@ -53,14 +57,14 @@ nav ul li {
     padding: 7px;
 }
 
-nav ul li a{
-   text-decoration: none;
-   color: #000; 
+nav ul li a {
+    text-decoration: none;
+    color: #000;
 }
 
-nav ul li:hover{
-   background-color: #21a3e1;   
-   
+nav ul li:hover {
+    background-color: #21a3e1;
+
 }
 
 .title_menu {
@@ -73,4 +77,143 @@ nav ul li:hover{
     height: 2px;
     background-color: #fff;
     margin: 5px;
+}
+
+section#banner {
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.desfoque-banner {
+    background: rgba(88, 88, 88, 0.35);
+    backdrop-filter: blur(6px);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.title-banner {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.title-banner-h1{
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+.title-banner-h2 {
+    font-size: 20px;
+}
+
+.title-banner-h1,
+.title-banner-h2{
+    color: #fff;
+    text-shadow: 1px 1px 1px #b3b3b3;
+    font-family: 'Quicksand', sans-serif;
+    margin: 15px 0px;
+}
+.title-banner-button a{
+    display: inline-block;
+    border: 1px solid #fff;
+    background: rgba(88, 88, 88, 0.35);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    margin: 15px 0px;
+    transition: ease .3s;
+}
+
+.title-banner-button a:hover{
+    background: rgba(179, 179, 179, 0.35);
+    opacity: .7 ;
+}
+
+.img-principal {
+    background-image: url('../images/nike-blue.png');
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+    background-position: center;
+}
+
+section#sobre-nos{
+    display: flex;
+    justify-content: center;
+}
+
+.cont-vision {
+    height: auto;
+    width: 300px;
+    border: 1px solid rgba(179, 179, 179, 0.35);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    min-width: 150px;
+}
+
+/* .selo-vision{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.selo-vision .selo {
+    width: 60px;
+    height: 25px;
+    background-color: red;
+    border-radius: 20px;
+    margin: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+} */
+
+.cont-img-vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-vision {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+}
+
+.img-vision img{
+    width: 100%;
+}
+
+.cont-description-vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-description-vision,
+.text-description-vision{
+    font-family: Arial, sans-serif; 
+    padding: 10px;
+}
+
+.title-description-vision{
+    font-weight: bold;
+    color: #000;
+}
+
+.text-description-vision {
+    color: rgb(82, 82, 82);
+    text-align: center;
+    line-height: 24px;
 }
