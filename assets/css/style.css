@@ -89,7 +89,6 @@ section#banner {
 .desfoque-banner {
     background: rgba(88, 88, 88, 0.35);
     backdrop-filter: blur(6px);
-    height: 650px;
     display: flex;
     justify-content: center;
 }
@@ -100,22 +99,24 @@ section#banner {
     width: 40%;
 }
 
-.title-banner-h1{
-    font-size: 65px;
+.title-banner-h1 {
+    font-size: 4em;
     margin-bottom: 10px;
 }
+
 .title-banner-h2 {
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 .title-banner-h1,
-.title-banner-h2{
+.title-banner-h2 {
     color: #fff;
     text-shadow: 1px 1px 1px #b3b3b3;
     font-family: 'Quicksand', sans-serif;
     margin: 15px 0px;
 }
-.title-banner-button a{
+
+.title-banner-button a {
     display: inline-block;
     border: 1px solid #fff;
     background: rgba(88, 88, 88, 0.35);
@@ -128,9 +129,9 @@ section#banner {
     transition: ease .3s;
 }
 
-.title-banner-button a:hover{
+.title-banner-button a:hover {
     background: rgba(179, 179, 179, 0.35);
-    opacity: .7 ;
+    opacity: .7;
 }
 
 .img-principal {
@@ -141,7 +142,7 @@ section#banner {
     background-position: center;
 }
 
-section#sobre-nos{
+section#sobre-nos {
     display: flex;
     justify-content: center;
 }
@@ -149,15 +150,70 @@ section#sobre-nos{
 .cont-vision {
     height: auto;
     width: 300px;
-    border: 1px solid rgba(179, 179, 179, 0.35);
     display: flex;
     flex-direction: column;
     padding: 10px;
-    margin: 5px;
-    min-width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-/* .selo-vision{
+.cont-img-vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-vision {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+}
+
+.img-vision img {
+    width: 100%;
+}
+
+.cont-description-vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-description-vision,
+.text-description-vision {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+.title-description-vision {
+    font-weight: bold;
+    color: #000;
+}
+
+.text-description-vision {
+    color: rgb(82, 82, 82);
+    text-align: center;
+    line-height: 24px;
+}
+
+section#sale {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cont-products-sale {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(179, 179, 179, 0.35);
+    margin: 10px 0px;
+}
+
+.selo-vision {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -174,46 +230,86 @@ section#sobre-nos{
     justify-content: center;
     align-items: center;
     font-size: 15px;
-} */
+}
 
-.cont-img-vision{
+.cont-img-sale {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-vision {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-}
-
-.img-vision img{
+.cont-img-sale img {
     width: 100%;
+    padding: 10px;
 }
 
-.cont-description-vision{
+.cont-product-buy {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.title-description-vision,
-.text-description-vision{
-    font-family: Arial, sans-serif; 
-    padding: 10px;
+.name-product,
+.money-product,
+.button-product a {
+    font-family: Arial, sans-serif;
 }
 
-.title-description-vision{
+.name-product {
     font-weight: bold;
     color: #000;
+    font-size: 1.1em;
+    flex: 1;
 }
 
-.text-description-vision {
-    color: rgb(82, 82, 82);
-    text-align: center;
-    line-height: 24px;
+.money-product {
+    color: #b3b3b3;
+    font-size: 0.8em;
+    margin: 10px 0px;
+    flex: 1;
+}
+
+.button-product{
+    flex: 1;
+}
+
+.button-product a {
+    display: inline-block;
+    background-color: #21a3e1;
+    padding: 10px;
+    border-radius: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.7em;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    border-top: 1px solid rgba(179, 179, 179, 0.35);
+}
+
+.copy{
+    flex: 1;
+    font-family: Arial, sans-serif;
+}
+
+.redes{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+}
+
+.redes a{
+    width: 30px;
+    margin-left: 7px;
+
+}
+
+.redes a img{
+    width: 100%;
 }
